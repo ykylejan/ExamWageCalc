@@ -31,6 +31,7 @@ public class Receipt extends AppCompatActivity {
         TextView overtimerate = findViewById(R.id.overtimerate_input);
 
         TextView rateinput = findViewById(R.id.rate_input);
+        TextView hr = findViewById(R.id.textView2);
 
         ImageView imgKyle = findViewById(R.id.imageView_kyle);
         ImageView imgDef = findViewById(R.id.imageView2);
@@ -57,53 +58,61 @@ public class Receipt extends AppCompatActivity {
                 imgKyle.setVisibility(View.VISIBLE);
                 imgDef.setVisibility(View.GONE);
         }
-
         switch (hours) {
             case "0":
                 overtimehrs.setVisibility(View.INVISIBLE);
                 overtimerate.setVisibility(View.INVISIBLE);
                 overtimehrstxt.setVisibility(View.INVISIBLE);
                 overtimeratetxt.setVisibility(View.INVISIBLE);
+                hr.setVisibility(View.INVISIBLE);
             case "1":
                 overtimehrs.setVisibility(View.INVISIBLE);
                 overtimerate.setVisibility(View.INVISIBLE);
                 overtimehrstxt.setVisibility(View.INVISIBLE);
                 overtimeratetxt.setVisibility(View.INVISIBLE);
+                hr.setVisibility(View.INVISIBLE);
             case "2":
                 overtimehrs.setVisibility(View.INVISIBLE);
                 overtimerate.setVisibility(View.INVISIBLE);
                 overtimehrstxt.setVisibility(View.INVISIBLE);
                 overtimeratetxt.setVisibility(View.INVISIBLE);
+                hr.setVisibility(View.INVISIBLE);
             case "3":
                 overtimehrs.setVisibility(View.INVISIBLE);
                 overtimerate.setVisibility(View.INVISIBLE);
                 overtimehrstxt.setVisibility(View.INVISIBLE);
                 overtimeratetxt.setVisibility(View.INVISIBLE);
+                hr.setVisibility(View.INVISIBLE);
             case "4":
                 overtimehrs.setVisibility(View.INVISIBLE);
                 overtimerate.setVisibility(View.INVISIBLE);
                 overtimehrstxt.setVisibility(View.INVISIBLE);
                 overtimeratetxt.setVisibility(View.INVISIBLE);
+                hr.setVisibility(View.INVISIBLE);
             case "5":
                 overtimehrs.setVisibility(View.INVISIBLE);
                 overtimerate.setVisibility(View.INVISIBLE);
                 overtimehrstxt.setVisibility(View.INVISIBLE);
                 overtimeratetxt.setVisibility(View.INVISIBLE);
+                hr.setVisibility(View.INVISIBLE);
             case "6":
                 overtimehrs.setVisibility(View.INVISIBLE);
                 overtimerate.setVisibility(View.INVISIBLE);
                 overtimehrstxt.setVisibility(View.INVISIBLE);
                 overtimeratetxt.setVisibility(View.INVISIBLE);
+                hr.setVisibility(View.INVISIBLE);
             case "7":
                 overtimehrs.setVisibility(View.INVISIBLE);
                 overtimerate.setVisibility(View.INVISIBLE);
                 overtimehrstxt.setVisibility(View.INVISIBLE);
                 overtimeratetxt.setVisibility(View.INVISIBLE);
+                hr.setVisibility(View.INVISIBLE);
             case "8":
                 overtimehrs.setVisibility(View.INVISIBLE);
                 overtimerate.setVisibility(View.INVISIBLE);
                 overtimehrstxt.setVisibility(View.INVISIBLE);
                 overtimeratetxt.setVisibility(View.INVISIBLE);
+                hr.setVisibility(View.INVISIBLE);
         }
 
         overtimehrs.setText(ovrtme);
@@ -113,19 +122,19 @@ public class Receipt extends AppCompatActivity {
                 rateinput.setText("\u20b1 100.00");
                 overtimerate.setText("\u20b1 "+hmr+"0");
 
-                overtimehrs.setText(ovrtme+" hrs");
+                overtimehrs.setText(ovrtme+"/hr");
                 break;
             case "Admin":
                 rateinput.setText("\u20b1 110.00");
                 overtimerate.setText("\u20b1 "+adm+"0");
 
-                overtimehrs.setText(ovrtme+" hrs");
+                overtimehrs.setText(ovrtme+"/hr");
                 break;
             case "Academic":
                 rateinput.setText("\u20b1 90.00");
                 overtimerate.setText("\u20b1 "+aca+"0");
 
-                overtimehrs.setText(ovrtme+" hrs");
+                overtimehrs.setText(ovrtme+"/hr");
                 break;
 
         }

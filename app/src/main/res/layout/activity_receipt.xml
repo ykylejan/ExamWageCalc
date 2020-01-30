@@ -33,7 +33,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="196dp"
-        android:layout_marginTop="4dp"
         android:text="TextView"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,9 +43,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="196dp"
-        android:layout_marginTop="4dp"
         android:text="TextView"
-        android:textSize="15dp"
+        android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/agesex_input" />
 
@@ -141,7 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="56dp"
-        android:text="Wage Text: "
+        android:text="Wage:           "
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/overtimerate_txt" />
@@ -186,6 +184,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/def" />
+
+    <TextView
+        android:id="@+id/dep_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:text="Department"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/department_input" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/hr"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/overtimerate_input"
+        app:layout_constraintTop_toBottomOf="@+id/rate_input" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

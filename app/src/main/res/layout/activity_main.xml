@@ -54,7 +54,7 @@
         android:layout_height="58dp"
         android:layout_marginStart="96dp"
         android:layout_marginTop="56dp"
-        android:text="Calculate"
+        android:text="Confirm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_hours" />
 
